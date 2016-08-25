@@ -1,0 +1,28 @@
+input {
+	background-color: tomato;
+}
+person {
+	margin-top: 1em;
+	display: block;
+}
+
+person:nth-of-type(2n) {
+	background-color: lightyellow	;
+}
+
+person:nth-of-type(2n+1) {
+	background-color: lightblue;
+}
+
+.showBorder {
+	border: 1px dotted black;
+}
+
+header {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+footer {
+	font-style: italic;
+}
