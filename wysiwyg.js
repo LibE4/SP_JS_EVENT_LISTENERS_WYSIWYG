@@ -50,8 +50,8 @@ var persons = [
 	  }
 	},
 	{
-	  title: "Samura-6",
-	  name: "Tomoe Gozen",
+	  title: "Samura",
+	  name: "Tomoe Gozen-6",
 	  bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
 	  image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg",
 	  lifespan: {
@@ -61,7 +61,7 @@ var persons = [
 	}
 ];
 var bodyEmt = document.getElementsByTagName("body");
-var textInputEmt = document.createElement("input");
+var textInputEmt = document.createElement("textarea");
 bodyEmt[0].appendChild(textInputEmt);
 console.log(bodyEmt[0]);
 var containerEmt = document.createElement("div");
@@ -85,6 +85,7 @@ for (var i = 0; i < persons.length; i++){
 	personEmt.addEventListener("click", function(e1){
 		targetEmt = this.childNodes[1];
 		this.className = "showBorder";
+    textInputEmt.value = targetEmt.innerHTML;
 		textInputEmt.focus();
 		textInputEmt.addEventListener("keyup", inputText);
 	});

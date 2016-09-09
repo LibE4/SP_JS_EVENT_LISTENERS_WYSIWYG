@@ -1,5 +1,6 @@
-input {
+textarea {
 	background-color: tomato;
+	font-size: large;
 }
 person {
 	margin-top: 1em;
